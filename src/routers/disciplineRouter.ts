@@ -2,12 +2,12 @@ import { Router } from "express";
 import disciplineController from "../controllers/disciplineController.js";
 import { ensureAuthenticatedMiddleware } from "../middlewares/ensureAuthenticatedMiddleware.js";
 
-const DisciplineRouter = Router();
+const disciplineRouter = Router();
 
-DisciplineRouter.get(
+disciplineRouter.get(
   "/disciplines",
   ensureAuthenticatedMiddleware,
   disciplineController.findMany
 );
 
-export default DisciplineRouter;
+export default disciplineRouter;

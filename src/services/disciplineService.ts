@@ -1,7 +1,8 @@
 import disciplineRepository from "../repositories/disciplineRepository.js";
 
 async function findMany() {
-  return disciplineRepository.findMany();
+  const test = await disciplineRepository.findMany();
+  return test;
 }
 
 export default {
